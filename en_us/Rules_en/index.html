@@ -429,17 +429,6 @@
 <li><p>Categroies: <code>AMS</code>, <code>FEATURE</code>, <code>SURVIVAL</code></p>
 </li>
 </ul>
-<h2 id="kirinArm"><a href="#kirinArm" class="headerlink" title="kirinArm"></a>kirinArm</h2><p>When enabled, Players can instantly break any block except bedrock with bare hands.</p>
-<ul>
-<li><p>Type <code>boolean</code></p>
-</li>
-<li><p>Default: <code>false</code></p>
-</li>
-<li><p>Suggested options: <code>false</code> , <code>true</code></p>
-</li>
-<li><p>Categroies: <code>AMS</code>, <code>FEATURE</code>, <code>SURVIVAL</code></p>
-</li>
-</ul>
 <h2 id="blueSkullController"><a href="#blueSkullController" class="headerlink" title="blueSkullController"></a>blueSkullController</h2><p>When enabled，You can choose whether to have Withering always shoot blue skulls or never shoot blue skull.<br><code>SURELY</code>: Always shoot blue skulls。<br><code>NEVER</code>: Never shoot blue skull。<br><code>VANILLA</code>: VANILLA。</p>
 <ul>
 <li><p>Type: <code>String</code></p>
@@ -606,28 +595,6 @@
 <li><p>Categroies: <code>AMS</code>, <code>FEATURE</code>, <code>SURVIVAL</code></p>
 </li>
 </ul>
-<h2 id="mineBedrock"><a href="#mineBedrock" class="headerlink" title="mineBedrock"></a>mineBedrock</h2><p>When enabled, Players can mine bedrock.</p>
-<ul>
-<li><p>Type: <code>boolean</code></p>
-</li>
-<li><p>Default: <code>false</code></p>
-</li>
-<li><p>Suggested options: <code>false</code>, <code>true</code></p>
-</li>
-<li><p>Categroies: <code>AMS</code>, <code>FEATURE</code></p>
-</li>
-</ul>
-<h2 id="mineEndPortalFrame"><a href="#mineEndPortalFrame" class="headerlink" title="mineEndPortalFrame"></a>mineEndPortalFrame</h2><p>When enabled, Players can mine bedrock.</p>
-<ul>
-<li><p>Type: <code>boolean</code></p>
-</li>
-<li><p>Default: <code>false</code></p>
-</li>
-<li><p>Suggested options: <code>false</code>, <code>true</code></p>
-</li>
-<li><p>Categroies: <code>AMS</code>, <code>FEATURE</code></p>
-</li>
-</ul>
 <h2 id="customMovableBlock"><a href="#customMovableBlock" class="headerlink" title="customMovableBlock"></a>customMovableBlock</h2><p>Customize the non-pushable block to make it pushable.<br>Command format:<br>&#x2F;carpet customMovableBlock minecraft:BlockName<br>You can also set multiple blocks simultaneously by separating them with commas:<br>&#x2F;carpet customMovableBlock minecraft:BlockName1,minecraft:BlockName2</p>
 <ul>
 <li><p>Type: <code>String</code></p>
@@ -685,7 +652,7 @@
 </li>
 <li><p>Suggested options: <code>-1</code> , <code>0 - 16</code></p>
 </li>
-<li><p>Categroies: <code>AMS</code>, <code>FEATURE</code>, <code>TNT</code></p>
+<li><p>Categroies: <code>AMS</code>, <code>FEATURE</code>, <code>SURVIVAL</code> <code>TNT</code></p>
 </li>
 </ul>
 <h2 id="sneakToEditSign"><a href="#sneakToEditSign" class="headerlink" title="sneakToEditSign"></a>sneakToEditSign</h2><p>When enabled，Players can sneak with empty hands to edit already placed signs by using the interact key, In <code>Minecraft &gt;= 1.20</code>, the behavior is such that players must sneak in order to edit a sign.</p>
@@ -777,18 +744,6 @@
 <li><p>Categroies: <code>AMS</code>, <code>FEATURE</code>, <code>SURVIVAL</code></p>
 </li>
 </ul>
-<h2 id="customBlockHardness"><a href="#customBlockHardness" class="headerlink" title="customBlockHardness"></a>customBlockHardness</h2><p>Use command to customizing mining hardness for any block.</p>
-<p>After enabling the rules, use the &#x2F;customBlockBlastResistance helper command to view the usage instructions.</p>
-<ul>
-<li><p>Type: <code>String</code></p>
-</li>
-<li><p>Default: <code>false</code></p>
-</li>
-<li><p>Suggested options: <code>0</code>, <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, <code>ops</code>, <code>true</code>, <code>false</code></p>
-</li>
-<li><p>Categroies: <code>AMS</code>, <code>FEATURE</code>, <code>SURVIVAL</code>, <code>COMMAND</code></p>
-</li>
-</ul>
 <h2 id="undyingCoral"><a href="#undyingCoral" class="headerlink" title="undyingCoral"></a>undyingCoral</h2><p>Prevent coral blocks and coral fans from dying.</p>
 <ul>
 <li><p>Type: <code>boolean</code></p>
@@ -831,6 +786,17 @@
 <li><p>Suggested options: <code>false</code>, <code>true</code></p>
 </li>
 <li><p>Categroies: <code>AMS</code>, <code>FEATURE</code>, <code>SURVIVAL</code></p>
+</li>
+</ul>
+<h2 id="breedableParrots"><a href="#breedableParrots" class="headerlink" title="breedableParrots"></a>breedableParrots</h2><p>Customize a food to feed the parrots and breed them (You can also feed them with stones if you really want to).</p>
+<ul>
+<li><p>Type: <code>boolean</code></p>
+</li>
+<li><p>Default: <code>false</code></p>
+</li>
+<li><p>Suggested options: <code>false</code>, <code>true</code></p>
+</li>
+<li><p>Categroies: <code>AMS</code>, <code>FEATURE</code></p>
 </li>
 </ul>
 <h2 id="craftableEnchantedGoldApple"><a href="#craftableEnchantedGoldApple" class="headerlink" title="craftableEnchantedGoldApple"></a>craftableEnchantedGoldApple</h2><p>Enchanted gold apple can be crafted using gold block and apple, which is the original crafting recipe before 15w44a.</p>
@@ -900,29 +866,6 @@
 </li>
 </ul>
 <h2 id="betterCraftablePolishedBlackStoneButton"><a href="#betterCraftablePolishedBlackStoneButton" class="headerlink" title="betterCraftablePolishedBlackStoneButton"></a>betterCraftablePolishedBlackStoneButton</h2><p>Use deepslate to crafted polished_blackstone_button in minecraft.</p>
-<ul>
-<li><p>Type: <code>boolean</code></p>
-</li>
-<li><p>Default: <code>false</code></p>
-</li>
-<li><p>Suggested options: <code>false</code>, <code>true</code></p>
-</li>
-<li><p>Categroies: <code>AMS</code>, <code>SURVIVAL</code>, <code>CRAFTING</code></p>
-</li>
-</ul>
-<h2 id="craftableLight"><a href="#craftableLight" class="headerlink" title="craftableLight"></a>craftableLight</h2><p>Add light block recipes in minecraft, when enabled, light blocks will have no mining hardness.</p>
-<p>&lt; This rule is available for <code>Minecraft &gt;= 1.17</code> &gt;</p>
-<ul>
-<li><p>Type: <code>boolean</code></p>
-</li>
-<li><p>Default: <code>false</code></p>
-</li>
-<li><p>Suggested options: <code>false</code>, <code>true</code></p>
-</li>
-<li><p>Categroies: <code>AMS</code>, <code>SURVIVAL</code>, <code>CRAFTING</code></p>
-</li>
-</ul>
-<h2 id="craftableBarrier"><a href="#craftableBarrier" class="headerlink" title="craftableBarrier"></a>craftableBarrier</h2><p>Add barrier recipes in minecraft, when enabled, barrier blocks will have no mining hardness.</p>
 <ul>
 <li><p>Type: <code>boolean</code></p>
 </li>
