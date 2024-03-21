@@ -126,14 +126,14 @@
 <p><code>bone_block</code>: 音符盒上有骨块时可以触发加载。</p>
 <p><code>wither_skeleton_skull</code>: 音符盒上有凋灵骷髅头（可以是挂在墙上的也可以是放在音符盒上的）时可以触发加载。</p>
 <p><code>note_block</code>: 无需条件，只有音符盒即可加载。</p>
-<p><code>OFF</code>: 禁用该规则。</p>
+<p><code>false</code>: 禁用该规则。</p>
 <p>由于在服务器当前维度没有玩家的300tick后，Minecraft会停止实体相关的更新，因此每当当前维度中没有玩家时使用该规则加载的区块中漏斗将会停止工作，你可以启用<code>blockChunkLoaderKeepWorldTickUpdate</code>或<code>keepWorldTickUpdate</code>规则来解决这个问题。</p>
 <ul>
 <li><p>类型: <code>String</code></p>
 </li>
 <li><p>默认值: <code>false</code></p>
 </li>
-<li><p>参考选项: <code>bone_block</code>, <code>wither_skeleton_skull</code>, <code>note_block</code>, <code>OFF</code></p>
+<li><p>参考选项: <code>bone_block</code>, <code>wither_skeleton_skull</code>, <code>note_block</code>, <code>false</code></p>
 </li>
 <li><p>分类: <code>AMS</code>, <code>FEATURE</code>, <code>AMS_chunkLoader</code></p>
 </li>
@@ -154,14 +154,14 @@
 <p><code>bone_block</code>: 活塞\黏性活塞上有骨块时触发加载。</p>
 <p><code>bedrock</code>: 活塞\黏性活塞下有基岩时触发加载。</p>
 <p><code>all</code>: 活塞\黏性活塞下有骨块或基岩时触发加载。</p>
-<p><code>OFF</code>: 禁用该规则。</p>
+<p><code>false</code>: 禁用该规则。</p>
 <p>由于在服务器当前维度没有玩家的300tick后，Minecraft会停止实体相关的更新，因此每当当前维度中没有玩家时使用该规则加载的区块中漏斗将会停止工作，你可以启用<code>blockChunkLoaderKeepWorldTickUpdate</code>或<code>keepWorldTickUpdate</code>规则来解决这个问题。</p>
 <ul>
 <li><p>类型: <code>String</code></p>
 </li>
 <li><p>默认值: <code>false</code></p>
 </li>
-<li><p>参考选项: <code>bone_block</code>, <code>bedrock</code>, <code>all</code>, <code>OFF</code></p>
+<li><p>参考选项: <code>bone_block</code>, <code>bedrock</code>, <code>all</code>, <code>false</code></p>
 </li>
 <li><p>分类: <code>AMS</code>, <code>FEATURE</code>, <code>AMS_chunkLoader</code></p>
 </li>
@@ -933,13 +933,15 @@
 <li><p>分类: <code>AMS</code>, <code>FEATURE</code>, <code>SURVIVAL</code></p>
 </li>
 </ul>
-<h2 id="欢迎消息（welcomeMessage）"><a href="#欢迎消息（welcomeMessage）" class="headerlink" title="欢迎消息（welcomeMessage）"></a>欢迎消息（welcomeMessage）</h2><p>在玩家进入服务器时发送一条自定义消息给玩家。</p>
+<h2 id="欢迎消息（welcomeMessage）"><a href="#欢迎消息（welcomeMessage）" class="headerlink" title="欢迎消息（welcomeMessage）"></a>欢迎消息（welcomeMessage）</h2><p>在玩家进入服务器时发送一条自定义消息给玩家（使用json文件来自定义消息）。</p>
+<p>json位置：</p>
+<p>[ 存档文件夹 ]&#x2F;carpetamsaddition&#x2F;welcomeMessage.json</p>
 <ul>
-<li><p>类型: <code>String</code></p>
+<li><p>类型: <code>boolean</code></p>
 </li>
 <li><p>默认值: <code>false</code></p>
 </li>
-<li><p>参考选项: <code>绿色健康</code></p>
+<li><p>参考选项: <code>false</code>, <code>true</code></p>
 </li>
 <li><p>分类: <code>AMS</code></p>
 </li>
@@ -953,6 +955,29 @@
 <li><p>参考选项: <code>0</code>, <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, <code>ops</code>, <code>true</code>, <code>false</code></p>
 </li>
 <li><p>分类: <code>AMS</code>, <code>COMMAND</code></p>
+</li>
+</ul>
+<h2 id="地毯规则总是设置为默认（carpetAlwaysSetDefault）"><a href="#地毯规则总是设置为默认（carpetAlwaysSetDefault）" class="headerlink" title="地毯规则总是设置为默认（carpetAlwaysSetDefault）"></a>地毯规则总是设置为默认（carpetAlwaysSetDefault）</h2><p>每当你设置carpet规则时，都会自动设置为默认值。</p>
+<ul>
+<li><p>类型: <code>boolean</code></p>
+</li>
+<li><p>默认值: <code>false</code></p>
+</li>
+<li><p>参考选项: <code>false</code>, <code>true</code></p>
+</li>
+<li><p>分类: <code>AMS</code>, <code>FEATURE</code></p>
+</li>
+</ul>
+<h2 id="禁用实验性内容检查（experimentalContentCheckDisabled）"><a href="#禁用实验性内容检查（experimentalContentCheckDisabled）" class="headerlink" title="禁用实验性内容检查（experimentalContentCheckDisabled）"></a>禁用实验性内容检查（experimentalContentCheckDisabled）</h2><p>允许在游戏中通过添加数据包来游玩Minecraft的实验性内容。</p>
+<p>&lt;该规则 Minecraft &gt;&#x3D; 1.19 可用&gt;</p>
+<ul>
+<li><p>类型: <code>boolean</code></p>
+</li>
+<li><p>默认值: <code>false</code></p>
+</li>
+<li><p>参考选项: <code>false</code>, <code>true</code></p>
+</li>
+<li><p>分类: <code>AMS</code>, <code>EXPERIMENTAL</code></p>
 </li>
 </ul>
 <h2 id="可合成附魔金苹果（craftableEnchantedGoldenApples）"><a href="#可合成附魔金苹果（craftableEnchantedGoldenApples）" class="headerlink" title="可合成附魔金苹果（craftableEnchantedGoldenApples）"></a>可合成附魔金苹果（craftableEnchantedGoldenApples）</h2><p>开启后，可利用金块和苹果合成附魔金苹果，即恢复到15w44a前的表现。</p>
@@ -1022,6 +1047,19 @@
 </li>
 </ul>
 <h2 id="更好的合成磨制黑石按钮（betterCraftablePolishedBlackStoneButton）"><a href="#更好的合成磨制黑石按钮（betterCraftablePolishedBlackStoneButton）" class="headerlink" title="更好的合成磨制黑石按钮（betterCraftablePolishedBlackStoneButton）"></a>更好的合成磨制黑石按钮（betterCraftablePolishedBlackStoneButton）</h2><p>使用深板岩来合成磨制黑石按钮。</p>
+<ul>
+<li><p>类型: <code>boolean</code></p>
+</li>
+<li><p>默认值: <code>false</code></p>
+</li>
+<li><p>参考选项: <code>false</code>, <code>true</code></p>
+</li>
+<li><p>分类: <code>AMS</code>, <code>SURVIVAL</code>, <code>CRAFTING</code></p>
+</li>
+</ul>
+<h2 id="开启1-21实验性内容合成配方（enableMinecraft1-21ExperimentalRecipes）"><a href="#开启1-21实验性内容合成配方（enableMinecraft1-21ExperimentalRecipes）" class="headerlink" title="开启1.21实验性内容合成配方（enableMinecraft1_21ExperimentalRecipes）"></a>开启1.21实验性内容合成配方（enableMinecraft1_21ExperimentalRecipes）</h2><p>解锁1.21实验性内容中所有物品的合成配方。</p>
+<p>使用此规则建议同步开启禁用实验性内容检查（experimentalContentCheckDisabled）防止客户端无法使用方块。</p>
+<p>&lt;该规则 Minecraft 1.20.3 - 1.20.4 可用&gt;</p>
 <ul>
 <li><p>类型: <code>boolean</code></p>
 </li>

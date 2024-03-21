@@ -133,13 +133,13 @@
 </li>
 <li><p><code>note_block</code>: No special requirement for note blocks to add tickets. Warning: as many high frequency clock will use note block, please take it carefully as it may make some chunks loading permanently in an unexpect way.</p>
 </li>
-<li><p><code>OFF</code>: Disable the rule.</p>
+<li><p><code>false</code>: Disable the rule.</p>
 </li>
 <li><p>Type: <code>String</code></p>
 </li>
-<li><p>Default: <code>OFF</code></p>
+<li><p>Default: <code>false</code></p>
 </li>
-<li><p>Suggested options: <code>bone_block</code>, <code>wither_skeleton_skull</code>, <code>note_block</code>, <code>OFF</code></p>
+<li><p>Suggested options: <code>bone_block</code>, <code>wither_skeleton_skull</code>, <code>note_block</code>, <code>false</code></p>
 </li>
 <li><p>Categroies: <code>AMS</code>, <code>FEATURE</code>, <code>AMS_chunkLoader</code></p>
 </li>
@@ -166,16 +166,16 @@
 </li>
 <li><p><code>all</code>: When boe_block is on the piston or bed rock is under the piston.</p>
 </li>
-<li><p><code>OFF</code>: Disable the rule.</p>
+<li><p><code>false</code>: Disable the rule.</p>
 </li>
 </ul>
 <p>Due to after 300 ticks without any players in the current dimension on the server, Minecraft will stop entities updates, hoppers in chunks loaded by this rule will cease to function whenever there are no players in the current dimension, You can enable the <code>blockChunkLoaderKeepWorldTickUpdate </code>or <code>keepWorldTickUpdate </code>rules to solve this issue.</p>
 <ul>
 <li><p>Type: <code>String</code></p>
 </li>
-<li><p>Default: <code>OFF</code></p>
+<li><p>Default: <code>false</code></p>
 </li>
-<li><p>Suggested options: <code>bone_block</code>, <code>bedrock</code>, <code>all</code>, <code>OFF</code></p>
+<li><p>Suggested options: <code>bone_block</code>, <code>bedrock</code>, <code>all</code>, <code>false</code></p>
 </li>
 <li><p>Categroies: <code>AMS</code>, <code>FEATURE</code>, <code>AMS_chunkLoader</code></p>
 </li>
@@ -967,13 +967,15 @@
 <li><p>Categroies: <code>AMS</code>, <code>FEATURE</code>, <code>SURVIVAL</code></p>
 </li>
 </ul>
-<h2 id="welcomeMessage"><a href="#welcomeMessage" class="headerlink" title="welcomeMessage"></a>welcomeMessage</h2><p>When players join the server, send them a custom message.</p>
+<h2 id="welcomeMessage"><a href="#welcomeMessage" class="headerlink" title="welcomeMessage"></a>welcomeMessage</h2><p>When players join the server, send them a custom message (Use json files to customize messages).</p>
+<p>json location:</p>
+<p>[ save path ]&#x2F;carpetamsaddition&#x2F;welcomeMessage.json</p>
 <ul>
-<li><p>Type: <code>String</code></p>
+<li><p>Type: <code>boolean</code></p>
 </li>
 <li><p>Default: <code>false</code></p>
 </li>
-<li><p>Suggested options: <code>Green and healthy</code></p>
+<li><p>Suggested options: <code>false</code>, <code>true</code></p>
 </li>
 <li><p>Categroies: <code>AMS</code></p>
 </li>
@@ -987,6 +989,29 @@
 <li><p>Suggested options: <code>0</code>, <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, <code>ops</code>, <code>true</code>, <code>false</code></p>
 </li>
 <li><p>Categroies: <code>AMS</code>, <code>COMMAND</code></p>
+</li>
+</ul>
+<h2 id="carpetAlwaysSetDefault"><a href="#carpetAlwaysSetDefault" class="headerlink" title="carpetAlwaysSetDefault"></a>carpetAlwaysSetDefault</h2><p>Whenever you set the carpet rule, it will be automatically set to the default value.</p>
+<ul>
+<li><p>Type: <code>boolean</code></p>
+</li>
+<li><p>Default: <code>false</code></p>
+</li>
+<li><p>Suggested options: <code>false</code>, <code>true</code></p>
+</li>
+<li><p>Categroies: <code>AMS</code>, <code>FEATURE</code></p>
+</li>
+</ul>
+<h2 id="experimentalContentCheckDisabled"><a href="#experimentalContentCheckDisabled" class="headerlink" title="experimentalContentCheckDisabled"></a>experimentalContentCheckDisabled</h2><p>Allow playing Minecraft experimental content in the game by adding data packs.</p>
+<p>&lt; Available for Minecraft &gt;&#x3D; 1.19 &gt;</p>
+<ul>
+<li><p>Type: <code>boolean</code></p>
+</li>
+<li><p>Default: <code>false</code></p>
+</li>
+<li><p>Suggested options: <code>false</code>, <code>true</code></p>
+</li>
+<li><p>Categroies: <code>AMS</code>, <code>EXPERIMENTAL</code></p>
 </li>
 </ul>
 <h2 id="craftableEnchantedGoldApple"><a href="#craftableEnchantedGoldApple" class="headerlink" title="craftableEnchantedGoldApple"></a>craftableEnchantedGoldApple</h2><p>Enchanted gold apple can be crafted using gold block and apple, which is the original crafting recipe before 15w44a.</p>
@@ -1056,6 +1081,19 @@
 </li>
 </ul>
 <h2 id="betterCraftablePolishedBlackStoneButton"><a href="#betterCraftablePolishedBlackStoneButton" class="headerlink" title="betterCraftablePolishedBlackStoneButton"></a>betterCraftablePolishedBlackStoneButton</h2><p>Use deepslate to crafted polished_blackstone_button in minecraft.</p>
+<ul>
+<li><p>Type: <code>boolean</code></p>
+</li>
+<li><p>Default: <code>false</code></p>
+</li>
+<li><p>Suggested options: <code>false</code>, <code>true</code></p>
+</li>
+<li><p>Categroies: <code>AMS</code>, <code>SURVIVAL</code>, <code>CRAFTING</code></p>
+</li>
+</ul>
+<h2 id="enableMinecraft1-21ExperimentalRecipes"><a href="#enableMinecraft1-21ExperimentalRecipes" class="headerlink" title="enableMinecraft1_21ExperimentalRecipes"></a>enableMinecraft1_21ExperimentalRecipes</h2><p>Unlock crafting recipes for all items in the 1.21 experimental content.</p>
+<p>Using this rule suggests synchronously enabling experimentalContentCheckDisabled to prevent clients from being unable to use blocks.</p>
+<p>&lt; Available for Minecraft 1.20.3 - 1.20.4 &gt;</p>
 <ul>
 <li><p>Type: <code>boolean</code></p>
 </li>
