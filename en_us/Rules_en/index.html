@@ -40,6 +40,10 @@
                 </li>
             
                 <li>
+                    <a href="/carpetamsaddition/Loggers">记录器[Loggers]</a>
+                </li>
+            
+                <li>
                     <a href="/carpetamsaddition/Commands">指令[Commands]</a>
                 </li>
             
@@ -610,7 +614,18 @@
 <li><p>Categroies: <code>AMS</code> , <code>FEATURE</code>, <code>EXPERIMENTAL</code></p>
 </li>
 </ul>
-<h2 id="maxPlayerInteractionDistance"><a href="#maxPlayerInteractionDistance" class="headerlink" title="maxPlayerInteractionDistance"></a>maxPlayerInteractionDistance</h2><p>Change the maximum interaction distance allowed by the server, set to <code>-1</code> to disable this rule</p>
+<h2 id="maxPlayerBlockInteractionRange"><a href="#maxPlayerBlockInteractionRange" class="headerlink" title="maxPlayerBlockInteractionRange"></a>maxPlayerBlockInteractionRange</h2><p>Change the maximum block interaction distance allowed by the server, set to “-1” to disable this rule.</p>
+<ul>
+<li><p>Type: <code>double</code></p>
+</li>
+<li><p>Default: <code>-1</code></p>
+</li>
+<li><p>Suggested options: <code>0 - 512</code>, <code>-1</code></p>
+</li>
+<li><p>Categroies: <code>AMS</code>, <code>FEATURE</code>, <code>SURVIVAL</code></p>
+</li>
+</ul>
+<h2 id="maxPlayerEntityInteractionRange"><a href="#maxPlayerEntityInteractionRange" class="headerlink" title="maxPlayerEntityInteractionRange"></a>maxPlayerEntityInteractionRange</h2><p>Change the maximum entity interaction distance allowed by the server, set to “-1” to disable this rule.</p>
 <ul>
 <li><p>Type: <code>double</code></p>
 </li>
@@ -623,8 +638,9 @@
 </ul>
 <h2 id="maxClientInteractionReachDistance"><a href="#maxClientInteractionReachDistance" class="headerlink" title="maxClientInteractionReachDistance"></a>maxClientInteractionReachDistance</h2><p>Change the maximum interaction distance allowed by the client, set to <code>-1</code> to disable this rule.</p>
 <p>Need to disable the tweakBlockReachOverride feature in Tweakeroo.</p>
+<p>&lt; Available for Minecraft &lt; 1.20.5 &gt;</p>
 <ul>
-<li><p>Type: <code>float</code></p>
+<li><p>Type: <code>double</code></p>
 </li>
 <li><p>Default: <code>-1</code></p>
 </li>
@@ -1093,7 +1109,7 @@
 </ul>
 <h2 id="enableMinecraft1-21ExperimentalRecipes"><a href="#enableMinecraft1-21ExperimentalRecipes" class="headerlink" title="enableMinecraft1_21ExperimentalRecipes"></a>enableMinecraft1_21ExperimentalRecipes</h2><p>Unlock crafting recipes for all items in the 1.21 experimental content.</p>
 <p>Using this rule suggests synchronously enabling experimentalContentCheckDisabled to prevent clients from being unable to use blocks.</p>
-<p>&lt; Available for Minecraft 1.20.3 - 1.20.4 &gt;</p>
+<p>&lt; Available for Minecraft 1.20.3 - 1.20.5 &gt;</p>
 <ul>
 <li><p>Type: <code>boolean</code></p>
 </li>

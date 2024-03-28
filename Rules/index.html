@@ -40,6 +40,10 @@
                 </li>
             
                 <li>
+                    <a href="/carpetamsaddition/Loggers">记录器[Loggers]</a>
+                </li>
+            
+                <li>
                     <a href="/carpetamsaddition/Commands">指令[Commands]</a>
                 </li>
             
@@ -576,7 +580,18 @@
 <li><p>分类: <code>AMS</code>, <code>FEATURE</code>, <code>EXPERIMENTAL</code></p>
 </li>
 </ul>
-<h2 id="最大玩家交互距离（maxPlayerInteractionDistance）"><a href="#最大玩家交互距离（maxPlayerInteractionDistance）" class="headerlink" title="最大玩家交互距离（maxPlayerInteractionDistance）"></a>最大玩家交互距离（maxPlayerInteractionDistance）</h2><p>更改服务器允许的最大交互距离，设置为 <code>-1</code> 禁用该规则。</p>
+<h2 id="最大玩家方块交互距离（maxPlayerBlockInteractionRange）"><a href="#最大玩家方块交互距离（maxPlayerBlockInteractionRange）" class="headerlink" title="最大玩家方块交互距离（maxPlayerBlockInteractionRange）"></a>最大玩家方块交互距离（maxPlayerBlockInteractionRange）</h2><p>更改服务器允许玩家与方块的最大交互距离，设置为“-1”禁用该规则。</p>
+<ul>
+<li><p>类型: <code>double</code></p>
+</li>
+<li><p>默认值: <code>-1</code></p>
+</li>
+<li><p>参考选项: <code>0 - 512</code>, <code>-1</code></p>
+</li>
+<li><p>分类: <code>AMS</code>, <code>FEATURE</code>, <code>SURVIVAL</code></p>
+</li>
+</ul>
+<h2 id="最大玩家实体交互距离（maxPlayerEntityInteractionRange）"><a href="#最大玩家实体交互距离（maxPlayerEntityInteractionRange）" class="headerlink" title="最大玩家实体交互距离（maxPlayerEntityInteractionRange）"></a>最大玩家实体交互距离（maxPlayerEntityInteractionRange）</h2><p>更改服务器允许玩家与实体的最大交互距离，设置为“-1”禁用该规则。</p>
 <ul>
 <li><p>类型: <code>double</code></p>
 </li>
@@ -589,8 +604,9 @@
 </ul>
 <h2 id="客户端最大方块放置距离（maxClientInteractionReachDistance）"><a href="#客户端最大方块放置距离（maxClientInteractionReachDistance）" class="headerlink" title="客户端最大方块放置距离（maxClientInteractionReachDistance）"></a>客户端最大方块放置距离（maxClientInteractionReachDistance）</h2><p>更改客户端允许的最大交互距离，设置为 <code>-1</code> 禁用该规则。</p>
 <p>需要关闭Tweakeroo的tweakBlockReachOverride功能。</p>
+<p>&lt;该规则 Minecraft &lt; 1.20.5 可用&gt;</p>
 <ul>
-<li><p>类型: <code>float</code></p>
+<li><p>类型: <code>double</code></p>
 </li>
 <li><p>默认值: <code>-1</code></p>
 </li>
@@ -1059,7 +1075,7 @@
 </ul>
 <h2 id="开启1-21实验性内容合成配方（enableMinecraft1-21ExperimentalRecipes）"><a href="#开启1-21实验性内容合成配方（enableMinecraft1-21ExperimentalRecipes）" class="headerlink" title="开启1.21实验性内容合成配方（enableMinecraft1_21ExperimentalRecipes）"></a>开启1.21实验性内容合成配方（enableMinecraft1_21ExperimentalRecipes）</h2><p>解锁1.21实验性内容中所有物品的合成配方。</p>
 <p>使用此规则建议同步开启禁用实验性内容检查（experimentalContentCheckDisabled）防止客户端无法使用方块。</p>
-<p>&lt;该规则 Minecraft 1.20.3 - 1.20.4 可用&gt;</p>
+<p>&lt;该规则 Minecraft 1.20.3 - 1.20.5 可用&gt;</p>
 <ul>
 <li><p>类型: <code>boolean</code></p>
 </li>
