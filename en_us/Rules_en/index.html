@@ -544,11 +544,17 @@
 <p>Use the following command to control whether it is forcibly enabled when <code>customBlockUpdateSuppressor </code> is enabled, with a permission level of 2: </p>
 <p>&#x2F;amsUpdateSuppressionCrashFixForceMode true&#x2F;false</p>
 <ul>
-<li><p>Type: <code>boolean</code></p>
+<li><p><code>false</code>: Disable rule</p>
+</li>
+<li><p><code>true</code>: Enable rule</p>
+</li>
+<li><p><code>silence</code>: Enable but no send server messages</p>
+</li>
+<li><p>Type: <code>String</code></p>
 </li>
 <li><p>Default: <code>false</code></p>
 </li>
-<li><p>Suggested options: <code>false</code> , <code>true</code></p>
+<li><p>Suggested options: <code>false</code> , <code>true</code>, <code>silence</code></p>
 </li>
 <li><p>Categroies: <code>AMS</code> , <code>FEATURE</code> , <code>SURVIVAL</code> , <code>EXPERIMENTAL</code></p>
 </li>
@@ -1363,6 +1369,7 @@
 </li>
 </ul>
 <h2 id="easyRefreshTrades"><a href="#easyRefreshTrades" class="headerlink" title="easyRefreshTrades"></a>easyRefreshTrades</h2><p>When a villager has not made a deal with the player before, each time the trade screen is opened, the content sold by the villager will be refreshed.</p>
+<p>When the player is holding an emerald block in their main hand, the refresh will not be triggered.</p>
 <ul>
 <li><p>Type: <code>boolean</code></p>
 </li>
@@ -1404,6 +1411,17 @@
 <li><p>Suggested options: <code>-1</code>, <code>1 - ?</code></p>
 </li>
 <li><p>Categroies: <code>AMS</code>, <code>FEATURE</code>, <code>SURVIVAL</code></p>
+</li>
+</ul>
+<h2 id="fakePlayerDefaultSurvivalMode"><a href="#fakePlayerDefaultSurvivalMode" class="headerlink" title="fakePlayerDefaultSurvivalMode"></a>fakePlayerDefaultSurvivalMode</h2><p>When summoning fake players, they are default to survival mode anyway.</p>
+<ul>
+<li><p>Type: <code>boolean</code></p>
+</li>
+<li><p>Default: <code>false</code></p>
+</li>
+<li><p>Suggested options: <code>false</code>, <code>true</code></p>
+</li>
+<li><p>Categroies: <code>AMS</code>, <code>FEATURE</code></p>
 </li>
 </ul>
 <h2 id="craftableEnchantedGoldApple"><a href="#craftableEnchantedGoldApple" class="headerlink" title="craftableEnchantedGoldApple"></a>craftableEnchantedGoldApple</h2><p>Enchanted gold apple can be crafted using gold block and apple, which is the original crafting recipe before 15w44a.</p>
