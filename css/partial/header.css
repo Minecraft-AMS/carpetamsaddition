@@ -13,8 +13,8 @@
   margin: 0;
   display: inline-flex;
   font-weight: bold;
-  border: 5px solid #000;
-  padding: 10px;
+  border: 10px double #00ced1;
+  padding: 20px;
 }
 .header-menu-list li:not(:last-child) {
   margin-right: 50px;
