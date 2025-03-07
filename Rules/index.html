@@ -907,6 +907,7 @@
 </li>
 </ul>
 <h2 id="我在哪（commandHere）"><a href="#我在哪（commandHere）" class="headerlink" title="我在哪（commandHere）"></a>我在哪（commandHere）</h2><p>使用 “&#x2F;here” 命令发送当前自身所在维度、坐标、对应的主世界&#x2F;下界坐标，同时给予自身30s的发光效果。</p>
+<p>当客户端安装了<code>Carpet Org Addition</code>时，可以单击消息末尾的<code>+H</code>按钮高亮路径点，使用<code>/highlight clear</code>命令来取消高亮。</p>
 <ul>
 <li><p>类型: <code>String</code></p>
 </li>
@@ -918,6 +919,7 @@
 </li>
 </ul>
 <h2 id="你在哪（commandWhere）"><a href="#你在哪（commandWhere）" class="headerlink" title="你在哪（commandWhere）"></a>你在哪（commandWhere）</h2><p>使用 “&#x2F;where” 命令获取指定玩家所在维度、坐标、对应的主世界&#x2F;下界坐标，同时给予目标玩家30s的发光效果。</p>
+<p>当客户端安装了<code>Carpet Org Addition</code>时，可以单击消息末尾的<code>+H</code>按钮高亮路径点，使用<code>/highlight clear</code>命令来取消高亮。</p>
 <ul>
 <li><p>类型: <code>String</code></p>
 </li>
@@ -1130,6 +1132,7 @@
 </li>
 </ul>
 <h2 id="发送玩家死亡位置（sendPlayerDeathLocation）"><a href="#发送玩家死亡位置（sendPlayerDeathLocation）" class="headerlink" title="发送玩家死亡位置（sendPlayerDeathLocation）"></a>发送玩家死亡位置（sendPlayerDeathLocation）</h2><p>当玩家死亡时，会广播一条包含该玩家死亡坐标以及维度的消息。</p>
+<p>当客户端安装了<code>Carpet Org Addition</code>时，可以单击消息末尾的<code>+H</code>按钮高亮路径点，使用<code>/highlight clear</code>命令来取消高亮。</p>
 <p><code>false</code>: 禁用规则。</p>
 <p><code>all</code>: 总是发送消息。</p>
 <p><code>realPlayerOnly</code>: 只有真实玩家死亡时发送消息。</p>
@@ -1516,6 +1519,41 @@
 <li><p>参考选项: <code>false</code>, <code>true</code></p>
 </li>
 <li><p>分类: <code>AMS</code>, <code>FEATURE</code></p>
+</li>
+</ul>
+<h2 id="强效经验修补（powerfulExpMending）"><a href="#强效经验修补（powerfulExpMending）" class="headerlink" title="强效经验修补（powerfulExpMending）"></a>强效经验修补（powerfulExpMending）</h2><p>让物品只需要在背包内即可受到经验修补的效果，无需拿在手上。</p>
+<ul>
+<li><p>类型: <code>boolean</code></p>
+</li>
+<li><p>默认值: <code>false</code></p>
+</li>
+<li><p>参考选项: <code>false</code>, <code>true</code></p>
+</li>
+<li><p>分类: <code>AMS</code>, <code>FEATURE</code>, <code>SURVIVAL</code></p>
+</li>
+</ul>
+<h2 id="玩家（commandAtSomeOnePlayer）"><a href="#玩家（commandAtSomeOnePlayer）" class="headerlink" title="@玩家（commandAtSomeOnePlayer）"></a>@玩家（commandAtSomeOnePlayer）</h2><p>使用<code>/@</code>指令去@某位玩家。</p>
+<ul>
+<li><p>类型: <code>String</code></p>
+</li>
+<li><p>默认值: <code>false</code></p>
+</li>
+<li><p>参考选项: <code>0</code>, <code>1</code>, <code>2</code>, <code>3</code>, <code>4</code>, <code>ops</code>, <code>true</code>, <code>false</code></p>
+</li>
+<li><p>分类: <code>AMS</code>, <code>COMMAND</code>, <code>SURVIVAL</code></p>
+</li>
+</ul>
+<h2 id="大收纳袋（largeBundle）"><a href="#大收纳袋（largeBundle）" class="headerlink" title="大收纳袋（largeBundle）"></a>大收纳袋（largeBundle）</h2><p>让收纳袋拥有一个<code>9x3</code>或<code>9x6</code>的UI，手持收纳袋右键即可打开UI。</p>
+<p>该规则不允许在收纳袋中放入收纳袋和潜影盒。</p>
+<p>&lt;该规则 Minecraft &gt;&#x3D; 1.17.1 可用&gt;</p>
+<ul>
+<li><p>类型: <code>String</code></p>
+</li>
+<li><p>默认值: <code>false</code></p>
+</li>
+<li><p>参考选项: <code>false</code>, <code>9x3</code>, <code>9x6</code></p>
+</li>
+<li><p>分类: <code>AMS</code>, <code>FEATURE</code>, <code>SURVIVAL</code></p>
 </li>
 </ul>
 <h2 id="可合成附魔金苹果（craftableEnchantedGoldenApples）"><a href="#可合成附魔金苹果（craftableEnchantedGoldenApples）" class="headerlink" title="可合成附魔金苹果（craftableEnchantedGoldenApples）"></a>可合成附魔金苹果（craftableEnchantedGoldenApples）</h2><p>开启后，可利用金块和苹果合成附魔金苹果，即恢复到15w44a前的表现。</p>
